@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './ProductList.css'
 import ProductItem from "../components/ProductItem/ProductItem";
 import useTelegram from "../components/hooks/useTelegram";
+import { useCallback, useEffect } from "react";
 
 
 const products = [
@@ -24,7 +25,31 @@ const getTotalPrice = (items) => {
 export default function ProductList(){
 
     const [addedItems, setAddedItems] = useState([]);
-    const {tg} = useTelegram();
+    const {tg, queryId} = useTelegram();
+
+     const onSendData = useCallback(()=>{
+            const data = {
+                products: addedItems,
+                totalPrice: getTotalPrice(addedItems),
+                queryId,
+            }
+            fetch('http://localhost:8000', {
+                method: 'POST',
+                headers: {
+                    'Content-type' : 'application/json'
+                },
+                bosy: JSON.stringify(data)
+            })
+        }, [])
+    
+        useEffect(()=>{
+            tg.onEvent('mainButtonClicked', onSendData);
+            return() => {
+                tg.offEvent('mainButtonClicked', onSendData);
+            }
+        }, [onSendData])
+
+
     const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
         let newItems = [];
