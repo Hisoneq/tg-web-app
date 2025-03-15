@@ -13,7 +13,8 @@ const products = [
     {id: 5, title: 'Гандоны', price: 10, description: 'Вторяк', image: 'https://avatars.mds.yandex.net/i?id=74809b360ad1646d22f8b6163dc43bbec164b18a-3702239-images-thumbs&n=13'},
     {id: 6, title: 'Шапка', price: 50, description: 'Обычная', image: 'https://smart-lab.ru/uploads/2022/images/02/78/63/2022/01/25/9dbb9e.jpg'},
     {id: 7, title: 'Шарфик', price: 100, description: 'Белый, стрышный', image: 'https://images-eu.ssl-images-amazon.com/images/I/41KOB5Nm1uL.jpg'},
-    {id: 8, title: 'Дырка', price: 0, description: 'На жопе', image: 'https://i0.wp.com/motherlesspics.com/uploads/posts/2023-12/1702666946_motherlesspics-com-p-erotika-bolshie-dirki-24.jpg?ssl=1'}
+    {id: 8, title: 'Дырка', price: 0, description: 'На жопе', image: 'https://i0.wp.com/motherlesspics.com/uploads/posts/2023-12/1702666946_motherlesspics-com-p-erotika-bolshie-dirki-24.jpg?ssl=1'},
+    {id: 9, title: 'Носки поношенные', price: 100, description: 'С маленькой дыркой', image: 'https://filapp1.imgsmail.ru/pic?url=https%3A%2F%2Fpic2.zhimg.com%2Fv2-1337b576067c03a4b7263e26ee2fd250_r.jpg&sig=21d7cec7ab162cd86bdf919baadc91af'}
 ]
 
 const getTotalPrice = (items) => {
