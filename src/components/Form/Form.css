@@ -2,12 +2,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 30px;
     background: var(--tg-theme-button-color);
-    border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--tg-theme-button-color);
 }
 
 .input {
@@ -17,13 +15,12 @@
     border: 1px solid #d0d0d0;
     border-radius: 10px;
     font-size: 16px;
-    color: #333;
     background: var(--tg-theme-button-color);
     transition: all 0.3s ease;
 }
 
 .input:focus {
-    border-color: #6c5ce7;
+    border-color: #c0c0c0;
     background: var(--tg-theme-button-color);
     box-shadow: 0 0 8px rgba(108, 92, 231, 0.3);
     outline: none; 
@@ -35,8 +32,7 @@
     margin-top: 15px;
     border: 1px solid #d0d0d0;
     border-radius: 10px;
-    font-size: 16px;
-    color: #333; 
+    font-size: 16px; 
     background: var(--tg-theme-button-color); 
     transition: all 0.3s ease; 
     appearance: none; 
@@ -47,14 +43,13 @@
 }
 
 .select:focus {
-    border-color: #6c5ce7; /* Цвет границы при фокусе */
+    border-color: #c0c0c0; /* Цвет границы при фокусе */
     background: var(--tg-theme-button-color);
-    box-shadow: 0 0 8px rgba(108, 92, 231, 0.3); /* Тень при фокусе */
     outline: none; /* Убираем стандартный outline */
 }
 
 .button {
-    width: 100%;
+    width: 20%;
     padding: 12px;
     margin-top: 20px;
     border: none;
