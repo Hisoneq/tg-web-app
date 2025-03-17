@@ -1,17 +1,77 @@
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #f9f9f9, #ffffff);
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
 }
 
-.input{
+.input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-top: 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
 }
 
-.select{
-    padding: 10px;
+.input:focus {
+    border-color: #6c5ce7;
+    background-color: #fff; 
+    box-shadow: 0 0 8px rgba(108, 92, 231, 0.3);
+    outline: none; 
+}
+
+.select {
+    width: 100%;
+    padding: 12px;
     margin-top: 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333; 
+    background-color: #f5f5f5; 
+    transition: all 0.3s ease; 
+    appearance: none; 
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236c5ce7%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); /* Кастомная стрелка */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+.select:focus {
+    border-color: #6c5ce7; /* Цвет границы при фокусе */
+    background-color: #fff; /* Белый фон при фокусе */
+    box-shadow: 0 0 8px rgba(108, 92, 231, 0.3); /* Тень при фокусе */
+    outline: none; /* Убираем стандартный outline */
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c5ce7; /* Фиолетовый цвет */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #5a4acf; /* Темнее при наведении */
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3); /* Тень при наведении */
+}
+
+.button:active {
+    background-color: #4a3abf; /* Еще темнее при нажатии */
+    transform: scale(0.98); /* Легкое уменьшение при нажатии */
 }

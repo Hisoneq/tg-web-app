@@ -39,7 +39,7 @@ export default function ProductList(){
                 headers: {
                     'Content-type' : 'application/json'
                 },
-                bosy: JSON.stringify(data)
+                body: JSON.stringify(data)
             })
         }, [])
     
